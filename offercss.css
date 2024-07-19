@@ -1,0 +1,75 @@
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px 0;
+    color: rgb(128, 129, 129);
+    font-weight: 300;
+}
+.menu-item a:hover {
+    background: rgb(250, 212, 218);
+}
+main {
+    flex: 1;
+    padding: 20px;
+    background: whitesmoke;
+    overflow: auto;
+}
+.offers {
+    margin-bottom: 40px;
+}
+.offers h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align:center;
+    text-transform: uppercase;
+}
+.offer-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.offer-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+   height:250px;
+}
+.offer-item img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+.offer-item h3 {
+    color: #ff8c00;
+    margin: 15px 0 10px;
+}
+.offer-item p {
+    color: #555;
+    line-height: 1.5;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.top{
+    background-color: #ff8c00;
+    color:white;
+    font-size:35px;
+    padding-top:5px;
+    
+    
+}
