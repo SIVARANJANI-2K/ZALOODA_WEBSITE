@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+            login 
+        </title>
+        <link rel="stylesheet" href="styl.css">
+        <script src="https://kit.fontawesome.com/751c1f0783.js" crossorigin="anonymous"></script>  
+    </head>
+    <body>
+        <header>
+            <h1>ZALOODA</h1>
+        </header>
+       
+       <div class="container"> 
+        <h2>Your account created !</h2>
+            <div class="form-box">
+                <h1 id="title">Sign In</h1>
+                <form action="login2.php" method="post" onsubmit="return check()">
+                        <div class="input-field">
+                            <i class="fa-regular fa-envelope fa-bounce"></i>
+                            <input type="email"  placeholder="Email" id="email" name="email">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-key fa-fade"></i>
+                            <input type="password"  placeholder="password" id="lock" name="lock">
+                        </div>
+                         <div class="input-field">
+                            <i class="fa-solid fa-house fa-flip"></i>
+                        <input type="text"  placeholder="address" id="address" name="address">
+                    </div>
+                        <p>Forgot password?<a href="#">Click here!</a></p>
+                    </div>
+                 <div class="btn-field">
+                <button type="submit" id="signinbtn" value="LOGIN" style="margin-left:auto;margin-top:700px;margin-right:auto;">LOGIN</button>
+                
+            </div>  
+                    
+                    
+                </form>
+            </div>
+            
+       </div>
+    
+       <script>
+        function check(){
+            
+            var email=document.getElementById('email').value;
+            var lock=document.getElementById('lock').value;
+            var address=document.getElementById('address').value;
+            
+        
+             if(email==null||email==""){
+                alert("Please enter your email id");
+                return false;
+            }
+             else if(lock==null||lock==""){
+                alert(" password please!");
+                return false;
+            }
+            if(lock.length<8){
+                alert("password must have 8 characters");
+                return false;
+
+            }
+            if(address==null||address==""){
+                alert("enter address for delivery");
+                return false;
+            }
+
+        }
+            
+
+        
+
+        
+       </script>
+       
+    </body>
+</html>
