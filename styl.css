@@ -23,19 +23,19 @@ header{
     position:relative;
 }
 .form-box{ 
-    width:90%; 
+    width:70%;
     max-width: 450px;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    padding:50px 60px 70px;
+    padding:20px 30px 20px;
     background: #fff;
 }
 .form-box h1{
   font-size: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   color:orangered;
   position: relative;
 
@@ -46,9 +46,11 @@ header{
     border-radius:3px;
     display:flex;
     align-items: center;
-    max-height: 65px;
+    max-height: 50px;
     transition:max-height 0.5s;
     overflow:hidden;
+    width:350px;
+    height: 40px;
 }
 input{
     width:100%;
@@ -70,16 +72,19 @@ form p a{
     color:#e90d47
 }
 .btn-field{
-    width:100%;
+    width:92%;
     display:flex;
     justify-content: space-between;
-
+    margin-left: 25px;
+}
+#signinbtn,#signupbtn{
+    padding : 0px 5px;
 }
 .btn-field button{
     flex-basis:48%;
     background:#e66e04;
     color:#fff;
-    height:40px;
+    height:30px;
     border-radius: 20px;
     border:0;
     outline:0;
@@ -87,7 +92,8 @@ form p a{
     transition: background 1s;
 }
 .input-group{
-    height:280px;
+    height:140px;
+    margin-left: 25px;
 }
 .btn-field button.disable{
     background:#eaeaea;
@@ -99,8 +105,27 @@ form p a{
     display:inline-block;
     display:flex;
     align-items: center;
-    max-height: 65px;
+    max-height: 50px;
     transition:max-height 0.5s;
     overflow:hidden;
+    margin-left: 25px;
+    width: 350px;
+    height: 35px;
+}
+.google{
+    width: 350px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 25px;
+}
 
+.google button{
+    background-color: transparent;
+    border: none;
+}
+
+.google i , button{
+    margin-top: 7px;
 }

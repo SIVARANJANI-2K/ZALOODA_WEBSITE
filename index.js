@@ -6,7 +6,7 @@ const foodItem= [
         category:'Cakes',
         rating:4.3,
         price:17,
-        img:'Chocolate-Cake.jpeg',
+        img:'assets/Chocolate-Cake.jpeg',
         quantity:1
     },
     {
@@ -15,7 +15,7 @@ const foodItem= [
         category:'Cakes',
         rating:4,
         price:25,
-        img:'blackforest-Cake.jpg',
+        img:'assets/blackforest-Cake.jpg',
         quantity:1
     },
     {
@@ -24,7 +24,7 @@ const foodItem= [
         category:'Cakes',
         rating:4,
         price:20,
-        img:'butterscotch.jpeg',
+        img:'assets/butterscotch.jpeg',
         quantity:1
     },
     {
@@ -33,7 +33,7 @@ const foodItem= [
         category:'Cakes',
         rating:5,
         price:30,
-        img:'coffee-Cake.jpg',
+        img:'assets/coffee-Cake.jpg',
         quantity:1
     },
     {
@@ -42,7 +42,7 @@ const foodItem= [
         category:'Cakes',
         rating:4,
         price:27,
-        img:'Rasmalai-Cake.jpeg',
+        img:'assets/Rasmalai-Cake.jpeg',
         quantity:1
     },
     {
@@ -51,7 +51,7 @@ const foodItem= [
         category:'Cakes',
         rating:5,
         price:30,
-        img:'ferrero-rocher-cake.jpg',
+        img:'assets/ferrero-rocher-cake.jpg',
         quantity:1
     },
     {
@@ -60,7 +60,7 @@ const foodItem= [
         category:'Cupcakes',
         rating:5,
         price:15,
-        img:'vanilla-Cupcakes.jpeg.webp',
+        img:'assets/vanilla-Cupcakes.jpeg.webp',
         quantity:1
     },
     {
@@ -69,7 +69,7 @@ const foodItem= [
         category:'Cupcakes',
         rating:4.3,
         price:17,
-        img:'funfetti-cupcakes-44-1200square.jpg',
+        img:'assets/funfetti-cupcakes-44-1200square.jpg',
         quantity:1
     },
     {
@@ -78,7 +78,7 @@ const foodItem= [
         category:'Cupcakes',
         rating:4.7,
         price:20,
-        img:'irish-car-bomb-cupcakes-55-1200square.jpg',
+        img:'assets/irish-car-bomb-cupcakes-55-1200square.jpg',
         quantity:1
     },
     {
@@ -87,7 +87,7 @@ const foodItem= [
         category:'Cupcakes',
         rating:4.7,
         price:25,
-        img:'margarita-cupcakes-27-1200square.jpg',
+        img:'assets/margarita-cupcakes-27-1200square.jpg',
         quantity:1
     },
     {
@@ -96,7 +96,7 @@ const foodItem= [
         category:'Cupcakes',
         rating:4.9,
         price:20,
-        img:'apple-cupcakes-36-1200square.jpg',
+        img:'assets/apple-cupcakes-36-1200square.jpg',
         quantity:1
     },
     {
@@ -105,7 +105,7 @@ const foodItem= [
         category:'Cupcakes',
         rating:5,
         price:35,
-        img:'red-velvet-cupcakes-61-1200square.jpg',
+        img:'assets/red-velvet-cupcakes-61-1200square.jpg',
         quantity:1
     },
    { 
@@ -114,7 +114,7 @@ const foodItem= [
     category:'muffins',
     rating:4.5,
     price:33,
-    img:'Banana-Oat-Muffins.jpg',
+    img:'assets/Banana-Oat-Muffins.jpg',
     quantity:1
    },
    { 
@@ -123,7 +123,7 @@ const foodItem= [
     category:'muffins',
     rating:4.2,
     price:24,
-    img:'Blueberry-Cream-Muffins.jpg',
+    img:'assets/Blueberry-Cream-Muffins.jpg',
     quantity:1
    },
    { 
@@ -132,7 +132,7 @@ const foodItem= [
     category:'muffins',
     rating:4.7,
     price:21,
-    img:'Coconut-Chocolate-Muffins.jpg',
+    img:'assets/Coconut-Chocolate-Muffins.jpg',
     quantity:1
    },
    { 
@@ -141,7 +141,7 @@ const foodItem= [
     category:'muffins',
     rating:4.6,
     price:27,
-    img:'Mini-Cherry-Muffins.jpg',
+    img:'assets/Mini-Cherry-Muffins.jpg',
     quantity:1
    },
    { 
@@ -150,7 +150,7 @@ const foodItem= [
     category:'muffins',
     rating:4.34,
     price:27,
-    img:'Maple-Chai-Pumpkin-Muffins.jpg',
+    img:'assets/Maple-Chai-Pumpkin-Muffins.jpg',
     quantity:1
    },
    { 
@@ -159,7 +159,7 @@ const foodItem= [
     category:'muffins',
     rating:4.7,
     price:21,
-    img:'Lemon-Raspberry-Streusel-Muffins.jpg',
+    img:'assets/Lemon-Raspberry-Streusel-Muffins.jpg',
     quantity:1
    },
    { 
@@ -168,7 +168,7 @@ const foodItem= [
     category:'Brownies',
     rating:4.8,
     price:20,
-    img:'2-cookies-cream-brownies.jpg',
+    img:'assets/2-cookies-cream-brownies.jpg',
     quantity:1
    },
    { 
@@ -177,7 +177,7 @@ const foodItem= [
     category:'Brownies',
     rating:4.9,
     price:25,
-    img:'9-caramel-pretzel-nutella-brownie.jpg',
+    img:'assets/9-caramel-pretzel-nutella-brownie.jpg',
     quantity:1
    },
    { 
@@ -186,7 +186,7 @@ const foodItem= [
     category:'Brownies',
     rating:4.6,
     price:26,
-    img:'18-blackberry-broma-brownie.jpg',
+    img:'assets/18-blackberry-broma-brownie.jpg',
     quantity:1
    },
    { 
@@ -195,7 +195,7 @@ const foodItem= [
     category:'Brownies',
     rating:4.9,
     price:30,
-    img:'26-skillet-brownies.jpg',
+    img:'assets/26-skillet-brownies.jpg',
     quantity:1
    },
    { 
@@ -204,7 +204,7 @@ const foodItem= [
     category:'Brownies',
     rating:4.5,
     price:28,
-    img:'bday-treffle-brownies.jpg',
+    img:'assets/bday-treffle-brownies.jpg',
     quantity:1
    },
    { 
@@ -213,7 +213,7 @@ const foodItem= [
     category:'Brownies',
     rating:4.8,
     price:29,
-    img:'Blueberry-Cream-Muffins.jpg',
+    img:'assets/Blueberry-Cream-Muffins.jpg',
     quantity:1
    },
    { 
@@ -222,7 +222,7 @@ const foodItem= [
     category:'Cookies',
     rating:4.8,
     price:30,
-    img:'shortbread-cookies.webp',
+    img:'assets/shortbread-cookies.webp',
     quantity:1
    },
    { 
@@ -231,7 +231,7 @@ const foodItem= [
     category:'Cookies',
     rating:4.9,
     price:20,
-    img:'spritz-cookies.webp',
+    img:'assets/spritz-cookies.webp',
     quantity:1
    },
    { 
@@ -240,7 +240,7 @@ const foodItem= [
     category:'Cookies',
     rating:5,
     price:22,
-    img:'thumbprint-cookies.webp',
+    img:'assets/thumbprint-cookies.webp',
     quantity:1
    },
    { 
@@ -249,7 +249,7 @@ const foodItem= [
     category:'Cookies',
     rating:4.4,
     price:25,
-    img:'whoopie-pies-cookies.webp',
+    img:'assets/whoopie-pies-cookies.webp',
     quantity:1
    },
    { 
@@ -258,7 +258,7 @@ const foodItem= [
     category:'Cookies',
     rating:4.6,
     price:27,
-    img:'fortune-cookies.webp',
+    img:'assets/fortune-cookies.webp',
     quantity:1
    },
    { 
@@ -267,7 +267,7 @@ const foodItem= [
     category:'Cookies',
     rating:4.7,
     price:29,
-    img:'best-chocolate-chip-cookiees.webp',
+    img:'assets/best-chocolate-chip-cookiees.webp',
     quantity:1
    },
    { 
@@ -276,7 +276,7 @@ const foodItem= [
     category:'Custard',
     rating:4.8,
     price:29,
-    img:'apple-custard.jpg',
+    img:'assets/apple-custard.jpg',
     quantity:1
    },
    { 
@@ -285,7 +285,7 @@ const foodItem= [
     category:'Custard',
     rating:4.6,
     price:29,
-    img:'coconut-egg-custard.jpg',
+    img:'assets/coconut-egg-custard.jpg',
     quantity:1
    },
    { 
@@ -294,7 +294,7 @@ const foodItem= [
     category:'Custard',
     rating:4.3,
     price:25,
-    img:'peach-custard.webp',
+    img:'assets/peach-custard.webp',
     quantity:1
    },
    { 
@@ -303,7 +303,7 @@ const foodItem= [
     category:'Custard',
     rating:4.9,
     price:24,
-    img:'pear-custard.jpg',
+    img:'assets/pear-custard.jpg',
     quantity:1
    },
    { 
@@ -312,7 +312,7 @@ const foodItem= [
     category:'Custard',
     rating:4.3,
     price:23,
-    img:'portuguese-custard.jpg',
+    img:'assets/portuguese-custard.jpg',
     quantity:1
    },
    { 
@@ -321,7 +321,7 @@ const foodItem= [
     category:'Custard',
     rating:5,
     price:30,
-    img:'raspberry-custard.jpg',
+    img:'assets/raspberry-custard.jpg',
     quantity:1
    },
 ];
