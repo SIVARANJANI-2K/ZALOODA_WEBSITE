@@ -10,10 +10,6 @@ This project consists of a website for ordering cakes online. Below is a brief d
 4. **about.html**: Information about the website and its purpose.
 5. **review.html**: Contains reviews about the food or services offered by the website.
 
-### PHP Files
-
-1. **login.php, login2.php**: PHP files used for connecting with the database and handling user authentication.
-
 ### CSS Files
 
 1. **styl.css, style1.css**: CSS files responsible for styling the web pages and ensuring a visually appealing layout.
