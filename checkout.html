@@ -12,6 +12,7 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const totalPrice = urlParams.get("price") || "10.00";
+      console.log("Total Price:", totalPrice);
 
       paypal
         .Buttons({
@@ -19,7 +20,9 @@
             return actions.order.create({
               purchase_units: [
                 {
-                  amount: { totalPrice },
+                  amount: {
+                    value: totalPrice,
+                  },
                 },
               ],
             });
