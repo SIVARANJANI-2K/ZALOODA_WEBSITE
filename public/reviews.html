@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Zalooda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff8c00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .review {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .review > div {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .review > div:hover {
+            transform: translateY(-10px);
+        }
+        .review img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .review img:hover {
+            transform: scale(1.1);
+        }
+        .review h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+            color: #ff8c00;
+        }
+        .review p {
+            font-size: 1em;
+            color: #555;
+            margin: 10px 0;
+        }
+        .review .rating {
+            margin: 10px 0;
+        }
+        .review .rating i {
+            color: goldenrod;
+        }
+        .review .author {
+            font-style: italic;
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            .review > div {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+        a {
+            color:  #ff8c00;
+            text-decoration: none;
+        }
+        footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Customer Reviews</h1>
+    </header>
+    <main>
+    <div class="review">
+        <div>
+            <h3>Butterscotch Cake</h3>
+            <img src="assets/butterscotch.jpeg" alt="Butterscotch Cake review">
+            <div class="rating">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            </div>
+            <p>The cake we ordered was amazing and tasted even better. It has 3 layers stuffed with nuts. We loved our cake tasting and the experience was amazing.</p>
+            <p class="author">~ John</p>
+        </div>
+        <div>
+            <h3>Spritz Cookies</h3>
+            <img src="assets/spritz-cookies.webp" alt="Spritz Cookies review">
+            <div class="rating">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            </div>
+            <p>The cookies were crunchy and taste was good. It was so colourful with many toppings and flavours. Good delivery experience.</p>
+            <p class="author">~ Dev</p>
+        </div>
+        <div>
+            <h3>Blackberry Brownie</h3>
+            <img src="assets/18-blackberry-broma-brownie.jpg" alt="Blackberry Brownie review">
+            <div class="rating">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            </div>
+            <p>The brownie was delicious and the blackberry flavour was worth the price. Thank you for the amazing brownies. Our friends liked them a lot.</p>
+            <p class="author">~ Jessica</p>
+        </div>
+        <div>
+            <h3>Cherry CupCake</h3>
+            <img src="assets/Chocolate-Cherry-Cupcakes-min-280x420.jpg" alt="Cherry Cupcake review">
+            <div class="rating">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            </div>
+            <p>Very tasty and fresh cupcakes and chocolate. Service is also very good. The cupcakes are awesome. Overall very good.</p>
+            <p class="author">~ Chandru</p>
+        </div>
+        <div>
+            <h3>Strawberry Cake</h3>
+            <img src="assets/Strawberry-Cake.jpeg" alt="Strawberry Cake review">
+            <div class="rating">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            </div>
+            <p>The cake we ordered was amazing and tasted even better. It has 3 layers stuffed with nuts. We loved our cake tasting and the experience was amazing.</p>
+            <p class="author">~ Lavanya</p>
+        </div>
+        <div>
+            <h3>Peach Custard</h3>
+            <img src="assets/peach-custard.webp" alt="Peach Custard review">
+            <div class="rating">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            </div>
+            <p>The custard was so nice with the pudding. Peach was one of my favourite flavours. We enjoyed a lot. Thank you.</p>
+            <p class="author">~ Priya</p>
+        </div>
+        <div>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</main>
+    <footer>
+        <p>&copy; 2024 Zalooda. All rights reserved.</p>
+    </footer>
+</body>
+</html>

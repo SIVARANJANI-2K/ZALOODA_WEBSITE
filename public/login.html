@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>login page</title>
+    <link rel="stylesheet" href="styl.css" />
+    <script
+      src="https://kit.fontawesome.com/751c1f0783.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="register.js"></script>
+    <script type="module" src="login.js"></script>
+    <script type = "module" src = "google.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ZALOODA</h1>
+    </header>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fa-regular fa-envelope fa-bounce"></i>
+              <input type="email" placeholder="Email" id="email" name="email" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-key fa-fade"></i>
+              <input
+                type="password"
+                placeholder="password must be 8 characters"
+                id="lock"
+                name="lock"
+              />
+            </div>
+            <p>Forgot password?<a href="forgotPassword.html">Click here!</a></p>
+          </div>
+          <div class="btn-field">
+            <button type="button" id="signupbtn">Sign Up</button>
+            <button type="button" id="signinbtn" class="disable">Sign In</button
+            ><br />
+          </div>
+          <div id="create">
+            <input
+              type="submit"
+              name="create"
+              value="CREATE ACCOUNT"
+              style="cursor: pointer"
+            />
+          </div>
+          <div id="login">
+            <input
+              type="submit"
+              name="log"
+              value="LOG IN"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class = "google">
+            <i class="fa-brands fa-google"></i>
+            <button type="button" id="loginGoogle">Login with Google</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      signinbtn.onclick = function one() {
+        create.style.maxHeight = "0";
+        login.style.maxHeight = "60px";
+        const input = document.getElementById("user");
+        input.removeAttribute("required");
+
+        title.innerHTML = "Sign In";
+        signupbtn.classList.add("disable");
+        signinbtn.classList.remove("disable");
+      };
+
+      signupbtn.onclick = function two() {
+        login.style.maxHeight = "0";
+        create.style.maxHeight = "60px";
+        const input = document.getElementById("user");
+        input.setAttribute("required", "");
+
+        title.innerHTML = "Sign Up";
+        signupbtn.classList.remove("disable");
+        signinbtn.classList.add("disable");
+      };
+      function check() {
+        var user = document.getElementById("user").value;
+        var email = document.getElementById("email").value;
+        var lock = document.getElementById("lock").value;
+
+        if (email == null || email == "") {
+          alert("Please enter your email id");
+          return false;
+        } else if (lock == null || lock == "") {
+          alert(" password please!");
+          return false;
+        }
+        if (lock.length < 8) {
+          alert("password must have 8 characters");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

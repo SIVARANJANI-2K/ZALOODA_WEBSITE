@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering & Events</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff8c00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .section:nth-child(odd) {
+            background-color: #fff;
+        }
+        .section:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+        .section img {
+            flex: 1;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px;
+            transition: transform 0.3s, border 0.3s;
+        }
+        .section img:hover {
+            transform: scale(1.05);
+            border: 5px solid #ff8c00;
+        }
+        .section-content {
+            flex: 2;
+            padding: 20px;
+        }
+        .section-content h1 {
+            font-size: 2.5em;
+            color: #ff8c00;
+            margin: 20px 0;
+        }
+        .section-content p {
+            font-size: 1.25em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .section-content a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.25em;
+            color: black;
+            padding: 10px 20px;
+            border: 2px solid #ff8c00;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .section-content a:hover {
+            background-color: #ff8c00;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 1.25em;
+        }
+         a {
+            color:#ff8c00;
+            text-decoration: none;
+            margin: 0 auto;
+            width: auto;
+         }
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section-content h1, .section-content p {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>CATERING & EVENTS</header>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>Custom Orders</h1>
+            <p>Let Zalooda add some magic to your next get together. Our catering and events team will work closely with you to customize a wide range of cakes, cupcakes, and other crowd-favorite desserts in your desired styles, colors, and sizes. Contact Us via Number or Email</p>
+            <a href="https://instagram.com/__zalooda__?igshid=MzNlNGNkZWQ4Mg==" target="_blank">Place an Order</a>
+        </div>
+        <img src="assets/cake slice.png" alt="Cake Slice">
+    </div>
+
+    <div class="section">
+        <img src="assets/cookies.png" alt="Cookies">
+        <div class="section-content">
+            <h1>Corporate & Gifting</h1>
+            <p>Zalooda makes the tastiest gifts, whether you want to brighten someone’s day or impress a corporate partner. Our catering and events team is ready to help you start your order: From custom styles, colors, and sizes to personalized packaging, we can find you the perfect gift.</p>
+            <a href="https://instagram.com/siva_ranjani04022?igshid=MzNlNGNkZWQ4Mg==" target="_blank">Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>Weddings</h1>
+            <p>Give your wedding celebration the sweetest ending with Zalooda desserts. We can make you a beautiful buttercream wedding cake in one of our signature styles, customize a classics-filled dessert spread, and set you up with favors and gifts. Our events and catering team is ready to help you get started.</p>
+            <a href="https://instagram.com/siva_ranjani04022?igshid=MzNlNGNkZWQ4Mg==" target="_blank">Order Now</a>
+        </div>
+        <img src="assets/wedding.png" alt="Wedding Cake">
+    </div>
+    <div class="section">
+        <a href="index.html">Back to Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Zalooda. All rights reserved.</p>
+    </footer>
+</body>
+</html>

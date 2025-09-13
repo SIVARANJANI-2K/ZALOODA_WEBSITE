@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zalooda</title>
     <link rel="stylesheet" href="index.css" />
-    <link                                              
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -191,8 +191,15 @@
         <div class="taste-header">
           <div class="user">
             <i class="fa fa-user-circle">
-              <a id="account_detail" class="open-button" style="text-decoration: none; color: #ff8c00"
-                 href = "profile.html" > Account </a></i>
+              <a
+                id="account_detail"
+                class="open-button"
+                style="text-decoration: none; color: #ff8c00"
+                href="profile.html"
+              >
+                Account
+              </a></i
+            >
           </div>
         </div>
         <div id="category-list">
@@ -227,17 +234,21 @@
           <p id="total-item">Total Item : 0</p>
           <p id="total-price">Total Price : $30</p>
           <p id="delivery">Free Delievery above $30</p>
-          <button class="cart-btn">
-            <a id="paypal"
-              href="checkout.html"
-              style="text-decoration: none; color: whitesmoke"
-              >checkout</a
-            >
+          <button id="paypal" class="cart-btn" style="color: whitesmoke">
+            Checkout
           </button>
         </div>
       </div>
     </div>
 
     <script src="index.js"></script>
+    <script>
+      document.getElementById("paypal").addEventListener("click", function () {
+        e.preventDefault();
+
+        const prive = document.getElementById("total-price").innerText;
+        window.location.href = "checkout.html?price=" + prive.split("$")[1];
+      });
+    </script>
   </body>
 </html>

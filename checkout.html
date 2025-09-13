@@ -3,29 +3,37 @@
 <html>
   <head>
     <title>Checkout</title>
-    <script src="https://www.paypal.com/sdk/js?client-id=Acb2uVhvNz_ALeI5AGjpg0AYxIrcVzOF3k3RtRq1TWBrMYsLek34W7VOiJi8vmTarHv2C1rkthyAEYoc
-&currency=USD"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=Acb2uVhvNz_ALeI5AGjpg0AYxIrcVzOF3k3RtRq1TWBrMYsLek34W7VOiJi8vmTarHv2C1rkthyAEYoc&currency=USD"></script>
   </head>
-  <body style="background-color: #111; color: white;">
+  <body style="background-color: #111; color: white">
     <h1>Complete your payment</h1>
     <div id="paypal-button-container"></div>
 
     <script>
-      paypal.Buttons({
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{
-              amount: { value: '10.00' }
-            }]
-          });
-        },
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name);
-            // Redirect to thank-you page or trigger confirmation
-          });
-        }
-      }).render('#paypal-button-container');
+      const urlParams = new URLSearchParams(window.location.search);
+      const totalPrice = urlParams.get("price") || "10.00";
+
+      paypal
+        .Buttons({
+          createOrder: function (data, actions) {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  amount: { totalPrice },
+                },
+              ],
+            });
+          },
+          onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+              alert(
+                "Transaction completed by " + details.payer.name.given_name
+              );
+              // Redirect to thank-you page or trigger confirmation
+            });
+          },
+        })
+        .render("#paypal-button-container");
     </script>
   </body>
 </html>
