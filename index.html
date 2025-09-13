@@ -243,10 +243,11 @@
 
     <script src="index.js"></script>
     <script>
-      document.getElementById("paypal").addEventListener("click", function () {
+      document.getElementById("paypal").addEventListener("click", function (e) {
         e.preventDefault();
 
         const prive = document.getElementById("total-price").innerText;
+        
         window.location.href = "checkout.html?price=" + prive.split("$")[1];
       });
     </script>

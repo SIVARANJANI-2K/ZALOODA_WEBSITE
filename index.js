@@ -734,5 +734,5 @@ function totalAmount(){
           });
 
     total_items.innerText="Total items : "+items;
-    price.innerText="Total Price : "+sum;
+    price.innerText="Total Price : $"+sum;
 }
