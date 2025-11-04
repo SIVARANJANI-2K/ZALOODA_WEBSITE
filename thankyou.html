@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Success</title>
+  </head>
+  <body style="background-color: #111; color: white">
+    <h1>Payment Successful 🎉</h1>
+    <p>Thank you for your payment, <span id="username"></span>!</p>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("username").textContent =
+        params.get("name") || "Customer";
+    </script>
+  </body>
+</html>
