@@ -22,4 +22,7 @@ jobs:
       - name: Deploy to Firebase
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase deploy --only hosting
+        run: |
+          cd public
+          firebase deploy --only hosting 
+         
